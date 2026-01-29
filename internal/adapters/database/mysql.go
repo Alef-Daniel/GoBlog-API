@@ -12,7 +12,7 @@ type MySQL struct {
 	conn *sql.DB
 }
 
-func NewMySQL(conn *sql.DB) (*MySQL, error) {
+func NewMySQL() (*MySQL, error) {
 	dsn := os.Getenv("DB_DSN")
 
 	if dsn == "" {
