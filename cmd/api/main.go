@@ -5,7 +5,7 @@ import (
 	"fmt"
 	"log"
 
-	"github.com/goblog-api/internal/adapters/database"
+	database "github.com/goblog-api/internal/infrastructure/database/mysql"
 	"github.com/golang-migrate/migrate"
 	"github.com/golang-migrate/migrate/database/mysql"
 	_ "github.com/golang-migrate/migrate/source/file"
